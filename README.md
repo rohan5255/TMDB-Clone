@@ -1,3 +1,2 @@
 # Movix-Website-project
-Single Page Application Website
-complete movies website project source code
+Single Page Application Website source code
