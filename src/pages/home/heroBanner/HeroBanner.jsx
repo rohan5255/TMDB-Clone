@@ -18,10 +18,10 @@ const HeroBanner = () => {
       if (event.key === "Enter" && query.length > 0) {
         navigate(`/search/${query}`);
       }
-    } else {
-      navigate(`/search/${query}`);
+      } else if(event.type === "click" && query.length > 0){
+        navigate(`/search/${query}`);
+      }
     }
-  }
 
 useEffect(()=>{
   const bg = url.backdrop + data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path;
