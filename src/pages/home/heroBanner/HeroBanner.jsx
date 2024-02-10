@@ -14,7 +14,11 @@ const HeroBanner = () => {
   const {data, loading} = useFetch("/movie/upcoming");
 
   const setQueryHandler= (event) =>{
-    if(event.key === "Enter" && query.length>0){
+    if (event.type === "keyup") {
+      if (event.key === "Enter" && query.length > 0) {
+        navigate(`/search/${query}`);
+      }
+    } else {
       navigate(`/search/${query}`);
     }
   }
@@ -41,7 +45,7 @@ useEffect(()=>{
             <div className="searchInput">
               <input type="text" placeholder="Search for a movie or tv show..."
               onChange={(e)=> setQuery(e.target.value)} onKeyUp={setQueryHandler} />
-              <button>Search</button>
+              <button onClick={setQueryHandler}>Search</button>
             </div>
           </div>
       </ContentWrapper>
