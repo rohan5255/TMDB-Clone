@@ -90,6 +90,9 @@
                     padding: 0 30px;
                 }
             }
+            input:hover{
+                box-shadow: 0 0 10px rgb(255, 255, 255);
+            }
             button {
                 width: 100px;
                 height: 50px;
@@ -105,6 +108,9 @@
                     height: 60px;
                     font-size: 18px;
                 }
+            }
+            button:hover{
+                box-shadow: 0 0 10px rgb(172, 101, 51)
             }
         }
     }
