@@ -29,9 +29,12 @@
     }
     .logo {
         cursor: pointer;
-        font-size: 40px;
+        font-size: 20px;
         font-family: 'Bungee Spice', sans-serif;
         text-shadow: 1px 1px 3px red, 0 0 1em rgb(198, 36, 8), 0.2em rgb(48, 15, 4);
+        @include md {
+            font-size: 40px;
+        }
     }
     .menuItems {
         list-style-type: none;
