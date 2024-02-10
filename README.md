@@ -1,2 +1,5 @@
 # TMDB-Clone
-Single Page Application Website source code
+- Developed a fully functional The Movies DataBase(TMDB) Clone using React.js
+- Single Page Application
+- Responsive Website
+
