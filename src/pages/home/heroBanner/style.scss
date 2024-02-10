@@ -112,6 +112,10 @@
             button:hover{
                 box-shadow: 0 0 10px rgb(172, 101, 51)
             }
+            button:active{
+                border: 2px solid rgb(175, 64, 4);
+                box-shadow: none;
+            }
         }
     }
 }
